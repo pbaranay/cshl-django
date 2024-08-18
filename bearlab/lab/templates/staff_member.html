@@ -1,0 +1,13 @@
+{% if staff %}
+
+    <h1>{{ staff.name }}</h1>
+
+    <h2>{{ staff.position }}</h2>
+
+    <p>Date joined: {{ staff.date_joined }}</p>
+
+{% else %}
+
+    That person doesn't work here!
+
+{% endif %}
