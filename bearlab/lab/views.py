@@ -10,3 +10,8 @@ def staff_page(request, slug):
         staff = None
     return render(request, 'staff_member.html',
     {'staff': staff})
+
+
+def all_lab_members(request):
+    return render(request, 'all_staff.html',
+    context={'members': Staff.objects.all()})

@@ -1,0 +1,7 @@
+<h1>Staff List</h1>
+
+<ul>
+    {% for staff in members %}
+    <li> <a href="{% url 'staff_page' staff.slug %}">{{ staff.name }}</a></li>
+    {% endfor %}
+</ul>

@@ -24,5 +24,6 @@ from web import views as web_views
 urlpatterns = [
     path('', web_views.homepage),
     path('admin/', admin.site.urls),
+    path('staff/', lab_views.all_lab_members, name="all_staff"),
     path('staff/<slug:slug>/', lab_views.staff_page, name="staff_page"),
 ]
