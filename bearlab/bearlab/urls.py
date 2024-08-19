@@ -17,10 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from lab import views as lab_views
 from web import views as web_views
 
 
 urlpatterns = [
     path('', web_views.homepage),
     path('admin/', admin.site.urls),
+    path('staff/<slug:slug>/', lab_views.staff_page, name="staff_page"),
 ]
