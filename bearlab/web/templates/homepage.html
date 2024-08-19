@@ -1,5 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
 <h1>Welcome to the {{ lab_name }} Lab</h1>
 
 <p>The current logged-in user is: {{ request.user }}</p>
 
 <p>The current time: {{ current_time }}</p>
+{% endblock %}
