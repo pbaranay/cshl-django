@@ -9,6 +9,7 @@ class Staff(models.Model):
     # blank makes it optional in forms and validation;
     # null makes it optional in the database
     date_left = models.DateField(blank=True, null=True)
+    slug = models.SlugField()
 
     def __str__(self):
         return f'{self.name} ({self.id})'
